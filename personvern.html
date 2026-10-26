@@ -41,18 +41,18 @@ footer a{color:var(--muted)}
   <nav><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="slett-konto.html">Slett konto</a></nav>
 </header>
 <h1>Personvernerklæring</h1>
-<p class="lead">Hent meg lar deg be familie, venner og naboer om skyss. Her forklarer vi hvilke opplysninger appen bruker, hvorfor, og hvilke rettigheter du har. Sist oppdatert 25. oktober 2026.</p>
+<p class="lead">Hent meg lar deg be familie, venner og naboer om skyss. Her forklarer vi hvilke opplysninger appen bruker, hvorfor, og hvilke rettigheter du har. Sist oppdatert 26. oktober 2026.</p>
 <h2>Hvem er ansvarlig</h2>
 <p>Ocean Eiendom AS (org.nr. 919 698 411), Grunnane 20, 5251 Søreidgrend er behandlingsansvarlig for opplysningene i Hent meg. Spørsmål om personvern sender du til personvern@hent-meg.no.</p>
 <h2>Opplysninger vi lagrer</h2>
-<p>Konto: navnet andre ser, brukernavn, e-postadresse og en personlig kode. Passordet ditt lagres kryptert hos Google, og vi kan ikke se det.</p>
+<p>Konto: navnet andre ser, brukernavn, e-postadresse og en personlig kode. E-postadressen er bare synlig for deg (og forelderen din, for barnekontoer). Passordet ditt lagres kryptert hos Google, og vi kan ikke se det.</p>
 <p>Kontakter og grupper: hvem du er kontakt med, hvilke grupper du er med i, og invitasjoner du har sendt eller fått. Listen over gruppene dine lagres også på profilen din, slik at bare medlemmer av samme gruppe får se hverandre.</p>
 <p>Gruppebilde (valgfritt): den som har opprettet en gruppe, kan legge inn et bilde som medlemmene ser.</p>
 <p>Innstillinger: om du kan hente andre («Jeg kan hente andre»), hvilken lyd du vil ha når noen ber om henting, og hvilke personer du har skjult fra forsiden. Hvem du har skjult, ser bare du.</p>
 <p>Profilbilde (valgfritt): et lite bilde du velger selv. Kontaktene og gruppemedlemmene dine ser det. Du kan bytte eller fjerne det når som helst.</p>
 <p>Telefonnummer (valgfritt): hvis du legger det inn, kan kontaktene og gruppemedlemmene dine se det og ringe deg under en henting.</p>
 <p>Faste steder (valgfritt): steder du lagrer, for eksempel Hjem, med navn og adresse. Bare du ser listen, men stedet du velger for en tur, vises for dem du spør.</p>
-<p>Varsler: en teknisk adresse for telefonen din (push-token), slik at vi kan sende deg varsler. Den er bare synlig for appen hos kontaktene og gruppemedlemmene dine, som bruker den til å sende deg varsler.</p>
+<p>Varsler: en teknisk adresse for telefonen din (push-token), slik at vi kan sende deg varsler. Den er bare synlig for deg og serveren vår. Kontaktene dine ser bare om du har slått på varsler.</p>
 <p>Hentinger: hvem du spurte, hvem som tok turen, status, hentested, hvor du skal, kommentar, meldinger dere sender hverandre, og tidspunkt for henting og når du var framme. Dette slettes automatisk etter 30 dager.</p>
 <p>Posisjon: se eget avsnitt under.</p>
 <p>På telefonen din lagres også innloggingen og hvem du valgte sist, slik at appen husker det.</p>
@@ -76,7 +76,7 @@ footer a{color:var(--muted)}
 <p>Kontaktene dine og medlemmene i gruppene dine ser navnet, brukernavnet og eventuelt profilbildet og telefonnummeret ditt, og om du kan hente andre. Den som kjenner koden eller brukernavnet ditt, kan se navnet ditt når de sender deg en kontaktforespørsel. Den som har opprettet en gruppe, kan fjerne medlemmer fra den. De du ber om henting, ser hentestedet, hvor du skal, kommentaren og posisjonen din mens turen pågår. De som ble spurt, får også beskjed når du er hentet og når du er trygt framme. For barnekontoer får også forelderen denne beskjeden.</p>
 <p>Vi bruker disse leverandørene (databehandlere) for å drive appen:</p>
 <ul>
-<li>Google Firebase (Google Ireland Ltd. og Google LLC): database, innlogging og levering av varsler. Databasen ligger i EU.</li>
+<li>Google Firebase (Google Ireland Ltd. og Google LLC): database, innlogging, serverfunksjoner og levering av varsler. Databasen og serverfunksjonene ligger i EU.</li>
 <li>Expo (650 Industries, Inc., USA): sender varslene videre til telefonen din, og leverer oppdateringer av appen. Varselteksten, for eksempel navn, adresse og meldinger, går gjennom Expo.</li>
 <li>Apple (Apple Inc.): leverer varsler til iPhone.</li>
 <li>OpenFreeMap: leverer kartbildene. Leverandøren ser IP-adressen til telefonen din når kartet lastes.</li>
@@ -101,6 +101,7 @@ footer a{color:var(--muted)}
 <h2>Sikkerhet</h2>
 <p>Du må være logget inn for å bruke appen, og all trafikk mellom appen og databasen er kryptert.</p>
 <p>Databasen er låst slik at du bare får tilgang til det som angår deg: din egen profil, barna dine, kontaktene dine og gruppene du er med i. Hentinger, posisjon og meldinger er bare tilgjengelige for den som ba om henting, de som ble spurt, og sjåføren.</p>
+<p>Varsler sendes fra serveren vår, som sjekker at avsenderen er knyttet til deg (kontakt, gruppe, forelder eller samme henting). Ved innlogging med brukernavn slår serveren opp e-postadressen din og gir den bare tilbake når passordet er riktig. Serveren begrenser antall forsøk for å hindre gjetting.</p>
 <h2>Endringer</h2>
 <p>Hvis vi endrer denne erklæringen vesentlig, får du beskjed i appen og må godta på nytt.</p>
 <footer>
